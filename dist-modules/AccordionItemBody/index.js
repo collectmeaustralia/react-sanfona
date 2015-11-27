@@ -55,6 +55,7 @@ var AccordionItemBody = (function (_Component) {
 })(_react.Component);
 
 exports.default = AccordionItemBody;
+module.exports = exports.default;
 
 AccordionItemBody.propTypes = {
   maxHeight: _react.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),

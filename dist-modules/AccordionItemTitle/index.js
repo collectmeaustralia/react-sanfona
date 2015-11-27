@@ -52,6 +52,7 @@ var AccordionItemTitle = (function (_Component) {
 })(_react.Component);
 
 exports.default = AccordionItemTitle;
+module.exports = exports.default;
 
 AccordionItemTitle.propTypes = {
   onClick: _react.PropTypes.func,

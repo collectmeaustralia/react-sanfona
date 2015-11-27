@@ -15,3 +15,4 @@ var _AccordionItem2 = _interopRequireDefault(_AccordionItem);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = { Accordion: _Accordion2.default, AccordionItem: _AccordionItem2.default };
+module.exports = exports.default;

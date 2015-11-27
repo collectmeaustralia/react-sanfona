@@ -162,6 +162,7 @@ var AccordionItem = (function (_Component) {
 })(_react.Component);
 
 exports.default = AccordionItem;
+module.exports = exports.default;
 
 AccordionItem.propTypes = {
   expanded: _react.PropTypes.bool,

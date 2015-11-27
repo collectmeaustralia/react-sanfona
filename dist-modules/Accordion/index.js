@@ -115,6 +115,7 @@ var Accordion = (function (_Component) {
 })(_react.Component);
 
 exports.default = Accordion;
+module.exports = exports.default;
 
 Accordion.defaultProps = {
   activeItems: [0],
