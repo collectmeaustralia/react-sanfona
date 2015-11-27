@@ -11,6 +11,11 @@ import AccordionItem from '../src/AccordionItem';
 
 class Demo extends React.Component {
 
+  onChange(activeItems) {
+    console.log('onChange :: ');
+    console.log(activeItems);
+  }
+
   render() {
     return (
       <div className="demo-container">
@@ -18,7 +23,7 @@ class Demo extends React.Component {
 
         <h2>Default settings</h2>
 
-        <Accordion>
+        <Accordion onChange={this.onChange}>
           {[1, 2, 3, 4, 5].map((item) => {
             return (
               <AccordionItem title={`Item ${ item }`} key={item}>

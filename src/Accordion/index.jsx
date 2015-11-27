@@ -40,11 +40,16 @@ export default class Accordion extends Component {
     const position = newState.activeItems.indexOf(index);
 
     if (position !== -1) {
-      newState.activeItems.splice(position, 1);
+      //newState.activeItems.splice(position, 1);
+      return;
     } else if (this.props.allowMultiple) {
       newState.activeItems.push(index);
     } else {
       newState.activeItems = [index];
+    }
+
+    if(this.props.onChange) {
+      this.props.onChange(newState.activeItems);
     }
 
     this.setState(newState);
@@ -87,5 +92,6 @@ Accordion.propTypes = {
   activeItems: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.array
-  ])
+  ]),
+  onChange: PropTypes.func
 };
